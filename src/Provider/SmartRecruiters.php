@@ -2,6 +2,7 @@
 
 namespace Krdinesh\OAuth2\Client\Provider;
 
+
 use Psr\Http\Message\ResponseInterface;
 use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Provider\AbstractProvider;
