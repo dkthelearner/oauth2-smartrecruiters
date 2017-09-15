@@ -51,7 +51,7 @@ class SmartRecruitersTest extends \PHPUnit_Framework_TestCase {
         $query          = ['scope' => implode($scopeSeparator, $options['scope'])];
         $url            = $this->provider->getAuthorizationUrl($options);
         $encodedScope   = $this->buildQueryString($query);
-        $this->assertContains($encodedScope, $url);
+        $this->assertContains(urldecode($encodedScope), $url);
     }
 
     public function testGetBaseAuthorizationUrl() {
