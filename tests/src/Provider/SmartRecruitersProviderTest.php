@@ -12,11 +12,11 @@ use Mockery as m;
  */
 
 /**
- * Description of SmartRecruitersTest
+ * Description of SmartRecruitersProviderTest
  *
  * @author krdinesh
  */
-class SmartRecruitersTest extends \PHPUnit_Framework_TestCase {
+class SmartRecruitersProviderTest extends \PHPUnit_Framework_TestCase {
 
     use QueryBuilderTrait;
 
@@ -55,7 +55,7 @@ class SmartRecruitersTest extends \PHPUnit_Framework_TestCase {
     }
 
     public function testGetBaseAuthorizationUrl() {
-        // Acting 
+        // Acting
         $scopeSeparater = $this->provider->getAuthorizationUrl();
         $uri            = parse_url($scopeSeparater, PHP_URL_QUERY);
         parse_str($uri, $query);
