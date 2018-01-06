@@ -1,7 +1,7 @@
 {
     "name": "krdinesh/oauth2-smartrecruiters",
     "description": "SmartRecruitersOAuth 2.0 Client Provider for The PHP League OAuth2-Client",
-    "type": "libaray",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
